@@ -116,28 +116,8 @@
  
  
  function close_tab(){
-     //this function clears everything in other to reset the program.
-    display_stat.style.display="none"; //closes the pop up
-    correct = 0; //resets correct
-    wrong = 0; //resets wrong
-    questions={ }; // clears the object that contains the missed questions
-  
-  counter=0; //resets counter
+     location.reload(); //reloads the document to clear fields 
 
-  document.querySelector(".correct").textContent="";
-  document.querySelector(".wrong").textContent="";
-  document.querySelectorAll(".display_wrong").forEach(element => { element.innerHTML="";});; //REMOVES ALL NODE THAT DISPLAYS THE MISSED QUESTIONS WHEN THE POP UP SHOWS
-  
- 
-  document.querySelectorAll(".time").forEach(element => { element.innerHTML="00:"}); //clears the time field
-
-  
-  document.querySelectorAll(".box").forEach(element => { element.innerHTML=""});
-  //clears the time variables
-second=0;
-hour=0;
-min=0;
-active = 0; //sets the timer active to 1 so it can continue working
  }
  
  function next(){
