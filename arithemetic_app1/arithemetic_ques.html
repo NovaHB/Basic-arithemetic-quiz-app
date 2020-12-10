@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>QUIZ APP</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="cont">
+        <div class="quest-box">
+            <div class="box one">
+                  
+            </div>
+            <p class="operator">+</p>
+            <div class="box two">
+            
+            </div>
+        </div>
+        <p style="text-align: center;"> = </p>
+        <div class="check">
+            <label for="">
+                <input type="text" name="" id="text" >
+            </label>
+           
+            <button id="submit" onclick="submit()" class="btn">SUBMIT</button>
+
+            <button id="nextt" onclick="next()" class="btn" style="background-color: transparent;" ><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            
+        </div>
+   
+    </div>
+
+    <p class="counter">QUESTION: <span class="counterr"></span></p>
+    <p class="stat">WRONG: <span class="wrong" style="color: red;"></span> CORRECT: <span class="correct" style="color:green;"></span></p>
+
+
+    <button class="btn stop" onclick="stop()">STOP</button>
+
+    
+
+    <div class="show_status">
+        <div class="content">
+            <p>You missed:  <span class="wrongg" style="color: red;"></span> questions and spent <span class="spent">  </span></p>
+     
+        <button class="btn close" onclick="close_tab()">X</button>        
+        </div>
+      
+    </div>
+    <div class="timer">
+        <p class="time hour">00:</p>
+        <p class="time minute">00:</p>
+        <p class="time second">00</p>
+        
+    </div>
+   
+</body>
+<script src="quiz.js"></script>
+</html>
